@@ -31,31 +31,60 @@
     <EditText
         android:id="@+id/et_email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Correo electronico"
         android:layout_margin="25dp"
         android:ems="10"
+        android:background="@drawable/et_esquinas_redondeadas"
         android:inputType="textEmailAddress"
         android:layout_below="@+id/hola_fimeno"/>
 
     <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Contraseña"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
+        android:background="@drawable/et_esquinas_redondeadas"
         android:inputType="textPassword"
         android:layout_below="@+id/et_email"/>
 
+    <TextView
+        android:id="@+id/olvido_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:gravity="end"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/et_password"/>
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_iniciar_sesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Iniciar Sesión"
-        android:layout_margin="25dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boton_esquinas_redondeadas"
+        android:layout_below="@+id/olvido_contrasena"/>
 
+    <TextView
+        android:id="@+id/registrar_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Primer semestre? Registrate"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/btn_iniciar_sesion"/>
 
 </RelativeLayout>
