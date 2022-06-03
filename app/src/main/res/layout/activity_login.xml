@@ -11,18 +11,17 @@
         android:id="@+id/logo"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo_osoapp" />
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/logo_oso_app" />
 
     <TextView
         android:id="@+id/hola_fimeno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¡Hola
-        Fimeño!"
+        android:text="¡Hola Fimeño!"
         android:gravity="center"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textSize="38sp"
@@ -31,7 +30,8 @@
     <EditText
         android:id="@+id/et_email"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:textSize="15sp"
         android:hint="Correo electronico"
         android:layout_margin="25dp"
         android:ems="10"
@@ -42,7 +42,8 @@
     <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
+        android:textSize="15sp"
         android:hint="Contraseña"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
@@ -55,25 +56,26 @@
         android:id="@+id/olvido_contrasena"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Olvidaste tu contraseña?"
-        android:gravity="end"
-        android:padding="10dp"
-        android:textSize="15sp"
+        android:layout_below="@id/et_password"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
-        android:layout_below="@id/et_password"/>
+        android:gravity="end"
+        android:padding="10dp"
+        android:textColor="@color/main"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/btn_iniciar_sesion"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
+        android:layout_height="40dp"
+        android:layout_below="@+id/olvido_contrasena"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
         android:background="@drawable/boton_esquinas_redondeadas"
-        android:layout_below="@+id/olvido_contrasena"/>
+        android:text="Iniciar Sesión" />
 
     <TextView
         android:id="@+id/registrar_cuenta"
@@ -85,6 +87,7 @@
         android:textSize="15sp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
+        android:textColor="@color/main"
         android:layout_below="@id/btn_iniciar_sesion"/>
 
 </RelativeLayout>
