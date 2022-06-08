@@ -10,6 +10,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 
+import maes.tech.intentanim.CustomIntent;
+
+
 public class MainActivity extends AppCompatActivity {
 
     private final int SPLASH_SCREEN_DISPLAY_LENGTH = 1500;
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                CustomIntent.customType(MainActivity.this, "fadein-to-fadeout");
             }
         }, SPLASH_SCREEN_DISPLAY_LENGTH);
 
