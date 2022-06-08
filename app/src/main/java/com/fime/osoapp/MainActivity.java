@@ -19,12 +19,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String colorActionBar = "#FF000000";
-
+        // String colorActionBar = "#FF000000";
 
         // Ocultar el action bar
         getSupportActionBar().hide();
-
 
         // Al terminar la animacion del splash screen se dirije hacia el main
         new Handler().postDelayed(new Runnable() {
