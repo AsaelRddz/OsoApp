@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/txt_registrar_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:textSize="25sp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:text="Registrar nueva cuenta"/>
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:background="@drawable/et_esquinas_redondeadas"
+        android:hint="Nombre"
+        android:layout_below="@+id/txt_registrar_cuenta"/>
+
+    <EditText
+        android:id="@+id/et_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:background="@drawable/et_esquinas_redondeadas"
+        android:hint="Apellido"
+        android:layout_below="@id/et_nombre"/>
+
+    <EditText
+        android:id="@+id/et_correo_electronico"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/et_esquinas_redondeadas"
+        android:inputType="textEmailAddress"
+        android:hint="Correo electronico"
+        android:layout_below="@id/et_apellido"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/et_esquinas_redondeadas"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:layout_below="@id/et_correo_electronico"/>
+
+    <EditText
+        android:id="@+id/et_confirmar_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/et_esquinas_redondeadas"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@id/et_password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Registrar"
+        android:textSize="15sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/boton_esquinas_redondeadas"
+        android:layout_below="@id/et_confirmar_password"/>
+
+</RelativeLayout>

@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:srcCompat="@drawable/logo_oso_app" />
@@ -55,7 +55,7 @@
         android:layout_below="@+id/et_email"/>
 
     <TextView
-        android:id="@+id/olvido_contrasena"
+        android:id="@+id/olvido_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_password"
@@ -71,9 +71,9 @@
         android:id="@+id/btn_iniciar_sesion"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@+id/olvido_contrasena"
+        android:layout_below="@+id/olvido_password"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
         android:textSize="15sp"
         android:background="@drawable/boton_esquinas_redondeadas"

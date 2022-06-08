@@ -8,17 +8,24 @@ import android.view.View;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
-    TextView olvido_contrasena;
+    TextView olvido_password, registrar_cuenta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        olvido_contrasena = findViewById(R.id.olvido_contrasena);
+        olvido_password = findViewById(R.id.olvido_password);
+        registrar_cuenta = findViewById(R.id.registrar_cuenta);
 
-        olvido_contrasena.setOnClickListener(view -> {
+        getSupportActionBar().hide();
+
+        // On click
+        olvido_password.setOnClickListener(view -> {
             startActivity(new Intent(this, ForgotPasswordActivity.class));
+        });
+        registrar_cuenta.setOnClickListener(view -> {
+            startActivity(new Intent(this, RegisterActivity.class));
         });
     }
 
