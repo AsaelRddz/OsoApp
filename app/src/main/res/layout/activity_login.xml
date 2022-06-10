@@ -83,7 +83,7 @@
         android:id="@+id/registrar_cuenta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Primer semestre? Registrate"
+        android:text="¿Nuevo aqui? Registrate"
         android:gravity="center"
         android:padding="10dp"
         android:textSize="15sp"

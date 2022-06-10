@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687213274083",
+    "project_id": "osoapp-2023",
+    "storage_bucket": "osoapp-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687213274083:android:181aa19103db674b28f6d6",
+        "android_client_info": {
+          "package_name": "com.fime.osoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687213274083-e944tl47ras2kpa3h6vjd1h09rc35sfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfqfoR4T9QVpVpJWcvyqFVcHdWN1pFiVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687213274083-e944tl47ras2kpa3h6vjd1h09rc35sfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
