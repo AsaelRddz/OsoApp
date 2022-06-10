@@ -39,6 +39,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:21.0.5'
     implementation 'com.google.firebase:firebase-database:20.0.5'
     implementation 'org.jetbrains:annotations:15.0'
+    implementation 'com.google.firebase:firebase-firestore:24.1.2'
     compile 'com.github.hajiyevelnur92:intentanimation:1.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
